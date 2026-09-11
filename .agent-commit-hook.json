@@ -1,0 +1,46 @@
+{
+  "memory_dir": "~/.codex/memories/projects/agent-telemetry",
+  "repo_report_dir": ".agent/commit-reports",
+  "include_globs": [
+    "README.md",
+    "agent_telemetry.py",
+    "config.example.toml",
+    "pyproject.toml",
+    "uv.lock",
+    ".agent-commit-hook.json",
+    ".githooks/*",
+    "docs/*.md",
+    "launchd/*.plist",
+    "scripts/*.py",
+    "scripts/*.sh",
+    "tests/*.py",
+    "tools/*.py"
+  ],
+  "exclude_globs": [
+    ".git/**",
+    ".agent/**",
+    ".venv/**",
+    ".pytest_cache/**",
+    "__pycache__/**",
+    "config.toml",
+    "docs/*.json",
+    "*.pyc"
+  ],
+  "session_globs": [
+    ".agent/session-notes/*.md",
+    ".agent/session-notes/*.txt"
+  ],
+  "log_globs": [
+    ".agent/logs/*.log",
+    ".agent/logs/*.txt",
+    ".agent/logs/*.jsonl"
+  ],
+  "max_file_bytes": 160000,
+  "max_log_bytes": 120000,
+  "capture_repo_snapshot": true,
+  "capture_sessions": false,
+  "capture_logs": false,
+  "capture_git_config": false,
+  "capture_environment": false,
+  "capture_gh_status": false
+}

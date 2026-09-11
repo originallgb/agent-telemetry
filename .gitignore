@@ -1,0 +1,12 @@
+.DS_Store
+.pytest_cache/
+.venv/
+__pycache__/
+*.pyc
+
+# Local credentials and runtime output.
+config.toml
+*.log
+
+# Local agent session context and generated commit pointers.
+.agent/

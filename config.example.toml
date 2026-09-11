@@ -1,0 +1,19 @@
+[codexbar]
+url = "http://127.0.0.1:8899/usage"
+poll_interval_seconds = 30
+request_timeout_seconds = 40
+
+[mqtt]
+host = "homeassistant.local"  # your Mosquitto broker
+port = 1883
+username = "agent-telemetry"
+# Prefer AGENT_TELEMETRY_MQTT_PASSWORD in an interactive shell. For launchd,
+# add `password = "..."` here only after copying this file and running chmod 600.
+# Defaults to agent-telemetry-<hostname>; must be unique per collector.
+# client_id = "agent-telemetry-my-mac"
+
+[telemetry]
+# Defaults to the short hostname; set a stable name if the hostname may change.
+# host_id = "my-mac"
+topic_prefix = "agent_telemetry"
+discovery_prefix = "homeassistant"
